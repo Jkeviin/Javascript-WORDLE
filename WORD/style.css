@@ -1,0 +1,60 @@
+
+
+header{
+    text-align: center;
+    background-color: rgba(144, 136, 255, 0.466);
+    padding-top: 0.01mm;
+    padding-bottom: 0.01mm;
+}
+.teclado{
+    text-align: center;
+}
+
+button{
+    text-transform: uppercase;
+    width: 60px;
+    height: 45px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.25rem;
+    border-radius: 8px;
+    border: 0 solid;
+    margin: 2px;
+    flex: 1.5;
+    background-color: #d3d6da;
+}
+.cuadro{
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    margin: 1px;
+    text-align: center;
+    width: 60px;    
+    height: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.separador{
+    margin: 2px; 
+}
+.cuadros{
+    text-align: center;
+    margin: 10px;
+}
+.acciones{
+    width: 94px;
+}
+button:hover{
+    filter: brightness(95%);
+    cursor: pointer;
+}
+
+body:hover{
+    cursor: default;
+}
+
+button:active{
+    background-color: white;
+}

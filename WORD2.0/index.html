@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style/style.css" rel="stylesheet">
+    <link rel="icon" type="icon" href="Imagenes/sena-logo.ico">
+    <title>WORDLE</title>
+</head>
+<body onkeydown="tecla(event)">
+    <div class="ventana" id="ventana">
+        <div id="cerrar"><img src="Imagenes/cerrar.png" onclick="cerrar()" id="cerrar"></div>
+        <div id="mensaje"></div>
+    </div>
+    <div class="ventana2" id="ventana2">
+        <div id="mensaje2">hola</div>
+    </div>
+    <div id="juego">
+            <header id="titulo">
+                <div
+                    <div id="titulo_wordle">Wordle (ES)</div>
+                </div>
+    <!--                 <div><input type="button" onclick="dia_noche()" value="DIA" id="dn"></div> -->
+            </header>
+            <main>
+                <div>
+                    <div class="cuadros">
+                            <div class="separador">
+                                <input class="f1" disabled></input>
+                                <input class="f1" disabled></input>
+                                <input class="f1" disabled></input>
+                                <input class="f1" disabled></input>
+                                <input class="f1" disabled></input>
+                            </div>
+                            <div class="separador">
+                                <input class="f2" disabled></input>
+                                <input class="f2" disabled></input>
+                                <input class="f2" disabled></input>
+                                <input class="f2" disabled></input>
+                                <input class="f2" disabled></input>
+                            </div>
+                            <div class="separador">
+                                <input class="f3" disabled></input>
+                                <input class="f3" disabled></input>
+                                <input class="f3" disabled></input>
+                                <input class="f3" disabled></input>
+                                <input class="f3" disabled></input>
+                            </div>
+                            <div class="separador">
+                                <input class="f4" disabled></input>
+                                <input class="f4" disabled></input>
+                                <input class="f4" disabled></input>
+                                <input class="f4" disabled></input>
+                                <input class="f4" disabled></input>
+                            </div>
+                            <div class="separador">
+                                <input class="f5" disabled></input>
+                                <input class="f5" disabled></input>
+                                <input class="f5" disabled></input>
+                                <input class="f5" disabled></input>
+                                <input class="f5" disabled></input>
+                            </div>
+                            <div class="separador">
+                                <input class="f6" disabled></input>
+                                <input class="f6" disabled></input>
+                                <input class="f6" disabled></input>
+                                <input class="f6" disabled></input>
+                                <input class="f6" disabled></input>
+                            </div>
+                    </div>
+                </div>
+            </main>
+            <div class="teclado">
+                <div><!-- Primera linea-->
+                    <button onclick="letra(value)" value="Q" class="ABC">q</button>
+                    <button onclick="letra(value)" value="W" class="ABC">w</button>
+                    <button onclick="letra(value)" value="E" class="ABC">e</button>
+                    <button onclick="letra(value)" value="R" class="ABC">r</button>
+                    <button onclick="letra(value)" value="T" class="ABC">t</button>
+                    <button onclick="letra(value)" value="Y" class="ABC">y</button>
+                    <button onclick="letra(value)" value="U" class="ABC">u</button>
+                    <button onclick="letra(value)" value="I" class="ABC">i</button>
+                    <button onclick="letra(value)" value="O" class="ABC">o</button>
+                    <button onclick="letra(value)" value="P" class="ABC">p</button>
+                </div>
+                <div>
+                    <!-- Segunda linea-->
+                    <button onclick="letra(value)" value="A" class="ABC">a</button>
+                    <button onclick="letra(value)" value="S" class="ABC">s</button>
+                    <button onclick="letra(value)" value="D" class="ABC">d</button>
+                    <button onclick="letra(value)" value="F" class="ABC">f</button>
+                    <button onclick="letra(value)" value="G" class="ABC">g</button>
+                    <button onclick="letra(value)" value="H" class="ABC">h</button>
+                    <button onclick="letra(value)" value="J" class="ABC">j</button>
+                    <button onclick="letra(value)" value="K" class="ABC">k</button>
+                    <button onclick="letra(value)" value="L" class="ABC">l</button>
+                    <button onclick="letra(value)" value="Ñ" class="ABC">ñ</button>
+                </div>
+                <div>
+                    <!-- Tercera linea-->
+                    <button onclick="enviar()" class="acciones" id="enviar">Enviar</button>
+                    <button onclick="letra(value)" value="Z" class="ABC">z</button>
+                    <button onclick="letra(value)" value="X" class="ABC">x</button>
+                    <button onclick="letra(value)" value="C" class="ABC">c</button>
+                    <button onclick="letra(value)" value="V" class="ABC">v</button>
+                    <button onclick="letra(value)" value="B" class="ABC">b</button>
+                    <button onclick="letra(value)" value="N" class="ABC">n</button>
+                    <button onclick="letra(value)" value="M" class="ABC">m</button>
+                    <button onclick="borrar()" class="acciones" id="borrar">←</button>
+                </div>
+            </div>
+    </div>
+    <script src="JavaScript/JSword.js"></script>
+</body>
+</html>

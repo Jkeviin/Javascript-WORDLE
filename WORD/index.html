@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a503bf213.js" crossorigin="anonymous"></script>
+    <title>WORD</title>
+</head>
+<body onkeydown="tecla(event)">
+    <div id="todo">
+        <header>
+            <div>
+                <div><h1>Wordle (ES)</h1></div>
+
+            </div>
+        </header>
+        <main>
+            <div>
+                <div class="cuadros">
+                        <div class="separador"> 
+                            <input id="C_1A" class="cuadro" disabled></input>
+                            <input id="C_1B" class="cuadro" disabled></input>
+                            <input id="C_1C" class="cuadro" disabled></input>
+                            <input id="C_1D" class="cuadro" disabled></input>
+                            <input id="C_1E" class="cuadro" disabled></input>
+                        </div>
+                        <div class="separador">
+                            <input id="C_2A" class="cuadro" disabled></input>
+                            <input id="C_2B" class="cuadro" disabled></input>
+                            <input id="C_2C" class="cuadro" disabled></input>
+                            <input id="C_2D" class="cuadro" disabled></input>
+                            <input id="C_2E" class="cuadro" disabled></input>
+                        </div>
+                        <div class="separador">
+                            <input id="C_3A" class="cuadro" disabled></input>
+                            <input id="C_3B" class="cuadro" disabled></input>
+                            <input id="C_3C" class="cuadro" disabled></input>
+                            <input id="C_3D" class="cuadro" disabled></input>
+                            <input id="C_3E" class="cuadro" disabled></input>
+                        </div>
+                        <div class="separador">
+                            <input id="C_4A" class="cuadro" disabled></input>
+                            <input id="C_4B" class="cuadro" disabled></input>
+                            <input id="C_4C" class="cuadro" disabled></input>
+                            <input id="C_4D" class="cuadro" disabled></input>
+                            <input id="C_4E" class="cuadro" disabled></input>
+                        </div>
+                        <div class="separador">
+                            <input id="C_5A" class="cuadro" disabled></input>
+                            <input id="C_5B" class="cuadro" disabled></input>
+                            <input id="C_5C" class="cuadro" disabled></input>
+                            <input id="C_5D" class="cuadro" disabled></input>
+                            <input id="C_5E" class="cuadro" disabled></input>
+                        </div>
+                        <div class="separador">
+                            <input id="C_6A" class="cuadro" disabled></input>
+                            <input id="C_6B" class="cuadro" disabled></input>
+                            <input id="C_6C" class="cuadro" disabled></input>
+                            <input id="C_6D" class="cuadro" disabled></input>
+                            <input id="C_6E" class="cuadro" disabled></input>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <div class="teclado">
+            <div><!-- Primera linea-->
+                <button onclick="letraq()" id="Q">q</button>
+                <button onclick="letraw()" id="W">w</button>
+                <button onclick="letrae()" id="E">e</button>
+                <button onclick="letrar()" id="R">r</button>
+                <button onclick="letrat()" id="T">t</button>
+                <button onclick="letray()" id="Y">y</button>
+                <button onclick="letrau()" id="U">u</button>
+                <button onclick="letrai()" id="I">i</button>
+                <button onclick="letrao()" id="O">o</button>
+                <button onclick="letrap()" id="P">p</button>
+            </div>
+            <div>
+                <!-- Segunda linea-->
+                <button onclick="letraa()" id="A">a</button>
+                <button onclick="letras()" id="S">s</button>
+                <button onclick="letrad()" id="D">d</button>
+                <button onclick="letraf()" id="F">f</button>
+                <button onclick="letrag()" id="G">g</button>
+                <button onclick="letrah()" id="H">h</button>
+                <button onclick="letraj()" id="J">j</button>
+                <button onclick="letrak()" id="K">k</button>
+                <button onclick="letral()" id="L">l</button>
+                <button onclick="letrañ()" id="Ñ">ñ</button>
+            </div>
+            <div>
+                <!-- Tercera linea-->
+                <button onclick="enviar()" class="acciones" id="enviar">Enviar</button>
+                <button onclick="letraz()" id="Z">z</button>
+                <button onclick="letrax()" id="X">x</button>
+                <button onclick="letrac()" id="C">c</button>
+                <button onclick="letrav()" id="V">v</button>
+                <button onclick="letrab()" id="B">b</button>
+                <button onclick="letran()" id="N">n</button>
+                <button onclick="letram()" id="M">m</button>
+                <button onclick="borrar()" class="acciones" id="borrar">←</button>
+            </div>
+        </div>
+    </div>
+    <script src="JSword.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: transform 2s;
+        }
+        div:active {
+            transform: rotateX(100deg);
+            transform: rotateX(none);
+        }
+    </style>
+</head>
+<body>
+    <h1>The transition Property</h1>
+    <button onclick="arroba()"></button>
+    <div id="hola">Hola</div>
+
+    <script>
+        function arroba(){
+            document.getElementById("hola").style.transition = "transform 1s";
+            document.getElementById("hola").style.transform = "rotateX(100deg)";
+            setTimeout("reestablecer()",800)
+        }
+        function reestablecer(){
+            document.getElementById("hola").style.transition = "transform 1s";
+            document.getElementById("hola").style.transform = "none";
+        }
+    </script>
+</body>
+</html>
